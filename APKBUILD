@@ -1,5 +1,5 @@
-# Contributor: NiLuJe <niluje@unknown.nowhere>
-# Maintainer: NiLuJe <niluje@unknown.nowhere>
+# Contributor: NiLuJe <ninuje@gmail.com>
+# Maintainer: NiLuJe <ninuje@gmail.com>
 pkgname=kobo-fbink
 pkgver=1.25.528
 pkgrel=1
