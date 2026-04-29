@@ -28,7 +28,8 @@ For instance, from the command-line in an Alpine chroot:
 
 Follow these minimal steps to compile and package FBInk for Kobo. Note that this does not
 set up a proper environment for self-hosting APK packages. It just allows the compilation
-of FBInk and packaging it into an APK installer archive.
+of FBInk and packaging it into an APK installer archive. The first two steps can be skipped    
+if you have already set up a user to compile APK packages.
 
 * Ensure that you are `root` and setup the abuild environment
     * Install the required packages `apk add alpine-sdk linux-headers doas abuild-rootbld git`
@@ -41,6 +42,7 @@ of FBInk and packaging it into an APK installer archive.
         * `git config --global user.email "email@addres"`
     * Generate the APK signing keys `abuild-keygen -a -i`. Ignore any message about failing to 
       install the keys in `/etc/apk/keys`.
+* Build the package
     * Clone this repository in the user's homedirectory: `cd ; git clone https://github.com/kintsugi-computer/kobo-fbink.git`
     * Enter the directory and update the Git submodules `git submodule update --init --recursive`
     * Make the project by invoking `make`. This will take awhile to compile FBInk, and `abuild` will display
