@@ -4,7 +4,7 @@ NiLuJe's FBInk in an APK package for installing into an Alpine chroot on a Kobo 
 
 ## Description
 
-This project is used to compile and package [NiLuJe's FBink](https://github.com/NiLuJe/FBInk)
+This project is used to compile and package [NiLuJe's FBInk](https://github.com/NiLuJe/FBInk)
 program and library into an APK installer archive so that it can easily be installed into an 
 Alpine chroot on a Kobo eReader.
 
@@ -43,12 +43,12 @@ of FBInk and packaging it into an APK installer archive.
       install the keys in `/etc/apk/keys`.
     * Clone this repository in the user's homedirectory: `cd ; git clone https://github.com/kintsugi-computer/kobo-fbink.git`
     * Enter the directory and update the Git submodules `git submodule update --init --recursive`
-    * Make the project by invoking `make`. This will take awhile to compile FBink, and `abuild` will display
+    * Make the project by invoking `make`. This will take awhile to compile FBInk, and `abuild` will display
       some errors about the untrusted signing key, the failure to create an index for the package
       repository and the missing package for makedepends. However, the apk archive will have been
       created in `/home/username/packages/username/armhf`.
 
 Please note that the approach taken here does not follow standard APK packaging practices. It uses 
 a git submodule to retrieve the source code as there is no easily accessible tar file release of
-FBink, and it abuses the `prepare()` stage to execute the compilation.
+FBInk, and it abuses the `prepare()` stage to execute the compilation.
 
