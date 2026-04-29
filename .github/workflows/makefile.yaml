@@ -1,4 +1,4 @@
-iname: Build and publish release
+name: Build and publish release
 
 permissions:
   contents: write
